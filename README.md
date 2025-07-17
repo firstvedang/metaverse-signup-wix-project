@@ -1,73 +1,59 @@
-# 🚀 First Contact Internship – Final Website Submission
+# ✨ Internship Project – Wix Studio Website + GitHub Integration
 
-> ⚠️ Note: Sorry for some ups and downs earlier. This is the **final version** of the code with all features working as per instructions.
+## 🔗 Live Site
+[Visit the Website](https://vedangt17.wixstudio.com/from-template-1)
 
----
+## 📌 Project Overview
 
-## 🌐 Live Website
+This website was developed in **Wix Studio** and is fully integrated with **GitHub**, featuring:
 
-🔗 [Visit Website](https://vedangt17.wixstudio.com/from-template-1)
+### ✅ Features Implemented
 
----
+- **Custom Signup Form**  
+  Users can register using a custom signup form. Data is saved to `Members/PrivateMembersData`.
 
-## ✅ What’s Working
+- **Metaverse + Thank You Page**  
+  After successful signup, users are redirected to the `Metaverse` page, which also serves as a thank-you screen.
 
-### 🎨 Frontend Design
-- Built entirely in **Wix Studio** using the provided Figma design.
-- Fully **responsive**, **accessible**, and uses proper HTML tags and alt text.
-- Structured layout for FAQ, Contact, and Metaverse access.
+- **Access Restriction Logic**  
+  - Users not logged in or not in the Members database see “Access Denied”.
+  - Approved members are automatically granted access to the Gather.town Metaverse space.
 
-### 💬 FAQ Section
-- **Search bar** filters questions live as you type.
-- **Dropdown accordion** remembers open/closed state while browsing.
+- **Gather.town Integration**  
+  Direct access to the Gather.town space upon signup.
 
-### 📩 Contact Us Form
-- Custom form (not lightbox)
-- Includes name, email, and message fields.
-- Data is submitted to Wix’s built-in Form Submissions.
+- **FAQ Section**  
+  Search and dropdown-based filtering available.
 
-### 🔐 Metaverse Access (Guestlist)
-- Custom signup form created.
-- On signup, users are added to **PrivateMembersData**.
-- After signup, users are redirected to the **Metaverse** page.
-- **Access to Metaverse page is restricted**: If not signed up, shows “Access Denied.”
+- **Contact Us Page**  
+  Includes alt text and proper HTML tags
 
----
+## 💻 Tech Stack
 
-## 🧠 How to Use
+- **Frontend**: Wix Studio
+- **Backend**: Velo (Wix Code)
+- **Database**: Wix CMS Collections
+- **Version Control**: GitHub
 
-1. **Sign up** on the website.
-2. Your data is stored in Members system (CMS or PrivateMembersData).
-3. You’re redirected to the **Metaverse page**, which includes the Gather.town link.
-4. Only guestlisted users can view this page.
+## 🧩 How It Works
 
----
+1. User signs up through the custom form.
+2. They are added to the Members CMS (`PrivateMembersData`).
+3. After signup, they are redirected to the Metaverse page.
+4. Access is checked — unauthorized users see “Access Denied”.
 
-## 💻 GitHub Integration
+## 📝 Notes
 
-- GitHub is connected.
-- All working code for FAQ filter, search, and access control is pushed here.
-- No lightbox bugs — clean and tested signup workflow.
-
----
-
-## 📂 Code Includes
-
-- Custom Signup Logic (`signup.js`)
-- FAQ Filter + Dropdown
-- Redirect using `wixLocation.to('/metaverse')`
+- Apologies for any early issues — all features now work properly.
+- GitHub contains all final backend code, including:
+  - Signup logic
+  - Guestlist/member verification
+  - FAQ search & dropdown behavior code in github
 
 ---
 
-## 📢 Final Note
+## 🚀 Deployed By
+**Vedang Tripathi**
 
-This project was submitted for the **First Contact Internship**.
-Thank you for your patience and support!
-
-— Vedang Tripathi
-
-- GitHub for documentation
-
----
 
 
