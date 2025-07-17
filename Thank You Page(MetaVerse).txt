@@ -1,0 +1,23 @@
+import wixUsers from 'wix-users';
+import wixLocation from 'wix-location';
+import wixData from 'wix-data';
+
+$w.onReady(() => {
+  if (!wixUsers.currentUser.loggedIn) {
+    wixLocation.to("/login"); // Redirect to login if not logged in
+    return;
+  }
+
+  const userId = wixUsers.currentUser.id;
+
+  // Check if user is in the Members/FirstData collection (or your guestlist)
+  wixData.get("Members/FirstData", userId)
+    .then((userData) => {
+      // ✅ Access granted
+      console.log("Access granted to metaverse.");
+    })
+    .catch((err) => {
+      // ❌ Not found in guestlist
+      $w("#accessDeniedText").show();  // Show a message
+    });
+});
