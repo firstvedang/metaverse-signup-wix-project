@@ -6,7 +6,7 @@
 
 ## 🌐 Live Website
 
-🔗 [Visit Website](https://your-wix-site-link.com)
+🔗 [Visit Website](https://vedangt17.wixstudio.com/from-template-1)
 
 ---
 
