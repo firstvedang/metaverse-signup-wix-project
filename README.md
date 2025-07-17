@@ -9,7 +9,7 @@ This is a Wix Studio implementation for a custom signup workflow that:
 ---
 
 ## 🔗 Live Site
-👉 [Visit Live Website]([https://your-wix-site.com](https://vedangt17.wixstudio.com/from-template-1))
+https://your-wix-site.com](https://vedangt17.wixstudio.com/from-template-1
 
 ---
 
