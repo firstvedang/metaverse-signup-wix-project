@@ -1,0 +1,26 @@
+
+import wixUsers from 'wix-users';
+import wixLocation from 'wix-location';
+import wixData from 'wix-data';
+
+export function signupBtn_click(event) {
+  const email = $w('#emailInput').value;
+  const password = $w('#passwordInput').value;
+
+  if (!email || !password) return;
+
+  wixUsers.register(email, password)
+    .then(() => {
+      // Insert into Guestlist
+      return wixData.insert('Guestlist', {
+        email: email,
+        createdAt: new Date()
+      });
+    })
+    .then(() => {
+      wixLocation.to('/thank-you-page'); // change to your correct slug
+    })
+    .catch((err) => {
+      console.log("Error:", err.message);
+    });
+}
